@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BALAJI HILL SIDE | 100Cr Private Estates | Beside Ramadevi School</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:#050507;color:#fff;font-family:'Inter',sans-serif}
+.nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:95%;max-width:1120px;background:#0E0E0F;border:2px solid #D4AF37;border-radius:100px;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;z-index:99999}
+.logo{font-family:'Cinzel';color:#D4AF37;font-weight:900;letter-spacing:3px;font-size:13px}
+.gold{background:#D4AF37;color:#000;padding:11px 18px;border-radius:100px;font-weight:900;font-size:11px;border:none;cursor:pointer;text-decoration:none}
+.ham{color:#D4AF37;font-size:24px;background:none;border:none;cursor:pointer;margin-left:10px}
+/* MENU - ENTRANCE LIKE CREATIVE */
+.mob{position:fixed;inset:0;background:#000;z-index:100000;display:none}
+.mob.show{display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.9) url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800') center/cover}
+.mobBox{position:relative;background:rgba(12,12,12,0.95);border:1.5px solid #D4AF37;border-radius:28px;padding:26px;width:92%;max-width:640px}
+.big{font-family:'Cinzel';font-size:38px;color:#D4AF37;text-align:center}
+.line{height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);margin:14px 0}
+.mlink{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(212,175,55,0.15);cursor:pointer;color:#E8D9A0;font-family:'Cinzel';font-size:12px;letter-spacing:2px;text-decoration:none}
+.mlink:hover{background:rgba(212,175,55,0.08);border-radius:10px;padding-left:8px;padding-right:8px}
+/* HERO - SUPER ENTRANCE - SAME AS INDAKA - NO BLACK */
+.hero{position:relative;width:100%;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#000}
+.heroBg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6}
+.heroShade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 40%,rgba(5,5,7,0.95) 100%)}
+.heroIn{position:relative;z-index:2;max-width:900px;padding:0 18px;margin-top:40px}
+.badge{border:1px solid rgba(212,175,55,0.6);color:#D4AF37;padding:8px 16px;border-radius:100px;font-size:10px;letter-spacing:2.5px;display:inline-block;margin-bottom:16px;background:rgba(0,0,0,0.5);font-weight:700}
+.h1{font-family:'Cinzel';font-size:clamp(36px,6.5vw,72px);line-height:0.92;font-weight:900;color:#FFF8DC;text-shadow:0 4px 30px rgba(0,0,0,0.8)}
+.price{font-family:'Cinzel';font-size:42px;color:#D4AF37;font-weight:900;margin-top:20px;display:block;text-shadow:0 2px 20px rgba(0,0,0,0.8)}
+.btn{padding:14px 22px;border-radius:100px;font-weight:900;font-size:11px;letter-spacing:1px;border:none;cursor:pointer;margin:6px;display:inline-block;text-decoration:none}
+.btn-g{background:#D4AF37;color:#000}.btn-o{border:1.5px solid #D4AF37;color:#D4AF37;background:rgba(0,0,0,0.4)}
+.sec{max-width:1150px;margin:0 auto;padding:60px 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card{background:#111;border:1px solid rgba(212,175,55,0.2);border-radius:18px;overflow:hidden;transition:0.35s}
+.card:hover{transform:translateY(-5px);border-color:#D4AF37}
+.card img{width:100%;height:200px;object-fit:cover;filter:grayscale(1);transition:0.45s}
+.card:hover img{filter:grayscale(0)}
+.body{padding:16px}
+.hl{border:1px solid rgba(212,175,55,0.25);background:rgba(212,175,55,0.07);border-radius:14px;padding:18px;text-align:center}
+.pop{position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:200000;display:none;align-items:center;justify-content:center;padding:16px}
+.pop.show{display:flex}
+.box{width:100%;max-width:520px;background:#121212;border:2px solid #D4AF37;border-radius:20px;padding:22px;max-height:92vh;overflow-y:auto}
+.lab{font-size:10px;letter-spacing:2px;color:#D4AF37;margin:10px 0 5px;display:block}
+input,select,textarea{width:100%;background:#1E1E1E;border:1px solid #D4AF37;color:#fff;padding:12px;border-radius:10px;margin:4px 0;font-size:13px}
+textarea{height:68px;resize:none}
+</style>
+</head>
+<body>
+
+<div class="nav">
+<div class="logo">BALAJI HILL SIDE</div>
+<div style="display:flex;align-items:center">
+<a href="tel:9703401402" class="gold">24/7 ENQUIRE</a>
+<button class="ham" onclick="document.getElementById('mPop').classList.add('show')">☰</button>
+</div>
+</div>
+
+<div id="mPop" class="mob" onclick="if(event.target===this)this.classList.remove('show')">
+<div class="mobBox">
+<div style="display:flex;justify-content:space-between"><div class="logo">BALAJI HILL SIDE<br><span style="font-size:8px;opacity:0.6">BESIDE RAMADEVI SCHOOL</span></div><button onclick="document.getElementById('mPop').classList.remove('show')" style="background:none;border:none;color:#D4AF37;font-size:26px;cursor:pointer">✕</button></div>
+<div class="big" style="margin-top:16px">THE ESTATES · PICS</div>
+<div class="line"></div>
+<a class="mlink" href="#project" onclick="document.getElementById('mPop').classList.remove('show')"><span>THE PROJECT</span><span>45 ACRES</span></a>
+<a class="mlink" href="#estates" onclick="document.getElementById('mPop').classList.remove('show')"><span>THE ESTATES</span><span>VENTURE PICS</span></a>
+<a class="mlink" href="#location" onclick="document.getElementById('mPop').classList.remove('show')"><span>LOCATION</span><span>1KM KING - RAMADEVI BESIDE</span></a>
+<a class="mlink" href="#amenities" onclick="document.getElementById('mPop').classList.remove('show')"><span>AMENITIES</span><span>RESORT</span></a>
+<a class="mlink" href="#contact" onclick="document.getElementById('mPop').classList.remove('show')"><span>CONTACT</span><span>24/7</span></a>
+<div class="line"></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px">
+<a href="tel:9703401402" class="btn btn-g">📞 CALL 9703401402</a>
+<a href="https://wa.me/919703401402" class="btn btn-o">💬 WHATSAPP</a>
+</div>
+</div>
+</div>
+
+<div id="bPop" class="pop" onclick="if(event.target===this)this.classList.remove('show')">
+<div class="box">
+<div style="display:flex;justify-content:space-between"><h3 id="sel" style="font-family:'Cinzel';color:#D4AF37">Book Your Estate</h3><button onclick="document.getElementById('bPop').classList.remove('show')" style="background:none;border:none;color:#D4AF37;font-size:22px">✕</button></div>
+<span class="lab">FULL NAME *</span><input id="bn" placeholder="Full Name">
+<span class="lab">EKKADA NUNDI / FROM *</span><input id="bf" placeholder="Hyderabad / US / Dubai">
+<span class="lab">PHONE / WHATSAPP *</span><input id="bp" placeholder="9703401402">
+<span class="lab">BUDGET ENTA?</span><select id="bb"><option>Select Budget</option><option>₹1 - 1.25 Cr</option><option>₹1.25 - 1.5 Cr</option><option>₹1.5 - 1.8 Cr Crest</option><option>NRI $84k</option></select>
+<span class="lab">SQR YARDS ADDS</span><select id="bs"><option>Select</option><option>150 Sq Yds - 158W - 1.25Cr</option><option>180 Sq Yds - 180E - 1.46Cr</option><option>202 Sq Yds - Crest - 1.67Cr FLAGSHIP</option></select>
+<span class="lab">PLANNING EPPUDU?</span><select id="bw"><option>Select</option><option>This Week</option><option>15 Days</option><option>1 Month - 6999 Offer</option><option>Investment 35% ROI</option></select>
+<span class="lab">NOTE</span><textarea id="bnote" placeholder="Note..."></textarea>
+<button class="gold" style="width:100%;padding:14px;margin-top:10px" onclick="submitB()">SUBMIT BOOKING → 24/7</button>
+</div>
+</div>
+
+<!-- SUPER ENTRANCE - SAME AS INDAKA PIC - WORKING 100% -->
+<div class="hero">
+<img class="heroBg" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=90" alt="Mountain Clouds">
+<div class="heroShade"></div>
+<div class="heroIn">
+<div class="badge">⚜️ SOVEREIGN HILL PROJECT • 100CR • 45 ACRES • RERA • GHMC • HMDA • BESIDE RAMADEVI SCHOOL</div>
+<h1 class="h1">BALAJI HILL SIDE<br><span style="color:#D4AF37">PRIVATE ESTATES</span></h1>
+<p style="margin-top:14px;letter-spacing:3px;font-size:11px;opacity:0.9">BESIDE RAMADEVI PUBLIC SCHOOL • PEDDA AMBERPET • VIJAYAWADA HIGHWAY 1KM TOUCH</p>
+<span class="price">₹6,999 / sq.ft</span>
+<div style="font-size:10px;letter-spacing:2px;opacity:0.7;margin-top:10px;background:rgba(0,0,0,0.6);display:inline-block;padding:8px 16px;border-radius:100px;border:1px solid rgba(212,175,55,0.3)">UNTIL OCT 31 → ₹7,499 • 8 ESTATES LEFT • 12 BOOKED THIS WEEK • NRI $84 • BESIDE RAMADEVI SCHOOL</div>
+<div style="margin-top:24px">
+<button class="btn btn-g" onclick="openB('Super Entrance - Private Viewing - Beside Ramadevi School')">REQUEST PRIVATE VIEWING - FORM →</button>
+<a href="#estates" class="btn btn-o">EXPLORE ESTATES ↓</a>
+</div>
+<div style="margin-top:18px;color:#D4AF37;font-size:10px;letter-spacing:2px">⚠️ APPUDE KONTE BAAGUNDEDI - Only 8 Left - Entrance Super Restored</div>
+</div>
+</div>
+
+<div class="sec" id="estates">
+<div class="badge">ESTATES - VENTURE PICS - GREY MOTION - WORKING</div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div class="body"><div class="badge">202 SQ YDS FLAGSHIP ₹1.67Cr</div><h3 style="font-family:'Cinzel'">THE CREST - 11</h3><button class="btn btn-g" style="width:100%;margin-top:8px" onclick="openB('THE CREST 11 - 202 Sq Yds')">BOOK NOW - FORM →</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><div class="body"><div class="badge">158W ₹1.25Cr</div><h3 style="font-family:'Cinzel'">WEST WIND</h3><button class="btn btn-g" style="width:100%;margin-top:8px" onclick="openB('158W 150 Sq Yds')">BOOK FORM →</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"><div class="body"><div class="badge">180E ₹1.46Cr</div><h3 style="font-family:'Cinzel'">EAST LIGHT</h3><button class="btn btn-g" style="width:100%;margin-top:8px" onclick="openB('180E 180 Sq Yds')">BOOK FORM →</button></div></div>
+</div>
+</div>
+
+<div class="sec" id="location" style="border:2px solid #D4AF37;border-radius:22px;background:rgba(212,175,55,0.06)">
+<div style="text-align:center"><div class="badge">📍 RAMADEVI SCHOOL BESIDE - MANADI - TRINEX VENTURE</div><h2 style="font-family:'Cinzel';font-size:28px">Beside <span style="color:#D4AF37">Ramadevi Public School</span><br>Pedda Amberpet</h2></div>
+<div style="margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid #D4AF37"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.108!2d78.66311!3d17.31036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!5e0!3m2!1sen!2sin" width="100%" height="320" style="border:0" loading="lazy"></iframe></div>
+<a href="https://www.google.com/maps/search/Ramadevi+Public+School+Pedda+Amberpet/@17.31036,78.66311,15z" target="_blank" class="btn btn-g" style="width:100%;margin-top:10px">📍 OPEN MAP - RAMADEVI BESIDE →</a>
+</div>
+
+<script>
+function openB(e){document.getElementById('sel').innerText=e;document.getElementById('bPop').classList.add('show')}
+function submitB(){
+let n=document.getElementById('bn').value,f=document.getElementById('bf').value,p=document.getElementById('bp').value,b=document.getElementById('bb').value,s=document.getElementById('bs').value,w=document.getElementById('bw').value,note=document.getElementById('bnote').value;
+if(!n||!p){alert('Name & Phone compulsory');return}
+let msg=`BOOKING%0AName:${n}%0AEkkada:${f}%0APhone:${p}%0ABudget:${b}%0ASq:${s}%0APlan:${w}%0ANote:${note}%0ALoc:Ramadevi Beside`;
+alert('SUCCESS! '+n+' - 9703401402 will call 24/7!');
+window.open('https://wa.me/919703401402?text='+msg,'_blank');
+document.getElementById('bPop').classList.remove('show');
+}
+</script>
+</body>
+</html>
