@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BALAJI HILL SIDE | Sovereign Estates - 100Cr Project - Pedda Amberpet</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:#0A0A0A;color:#F5F0E8;font-family:'Inter',sans-serif;overflow-x:hidden}
+.cinzel{font-family:'Cinzel',serif}
+.gold{color:#D4AF37}.gold-bg{background:#D4AF37;color:#000}
+.nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:92%;max-width:1200px;background:rgba(10,10,10,0.7);backdrop-filter:blur(20px);border:1px solid rgba(212,175,55,0.2);border-radius:100px;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;z-index:100}
+.logo{font-family:'Cinzel';font-weight:800;letter-spacing:3px;color:#D4AF37;font-size:14px}
+.nav-links{display:flex;gap:20px;font-size:11px;letter-spacing:2px;opacity:0.8}
+.nav-links a{color:#fff;text-decoration:none;cursor:pointer}
+.nav-links a:hover{color:#D4AF37}
+.btn-gold{background:linear-gradient(135deg,#D4AF37,#B8941F);color:#000;padding:10px 20px;border-radius:100px;font-weight:800;font-size:11px;letter-spacing:1px;text-decoration:none;border:none;cursor:pointer}
+.hamburger{display:none;font-size:20px;cursor:pointer;color:#D4AF37}
+.mob-menu{position:fixed;top:0;left:0;width:100%;height:100vh;background:#000;z-index:200;display:none;flex-direction:column;padding:30px}
+.mob-menu a{color:#D4AF37;text-decoration:none;font-family:'Cinzel';font-size:24px;margin:18px 0}
+.hero{height:95vh;background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4') center/cover;position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 40%,rgba(10,10,10,1) 100%)}
+.hero-content{position:relative;z-index:2;max-width:900px;padding:20px}
+.hero h1{font-family:'Cinzel';font-size:clamp(36px,7vw,78px);line-height:0.9;font-weight:800;color:#FFF8DC}
+.hero p{margin:20px 0;opacity:0.8;letter-spacing:2px;font-size:12px}
+.sec{max-width:1200px;margin:0 auto;padding:70px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:rgba(255,255,255,0.03);border:1px solid rgba(212,175,55,0.15);border-radius:20px;overflow:hidden;transition:0.4s;backdrop-filter:blur(10px)}
+.card:hover{transform:translateY(-6px);border-color:#D4AF37;box-shadow:0 20px 40px rgba(212,175,55,0.15)}
+.card img{width:100%;height:220px;object-fit:cover;filter:grayscale(100%);transition:0.5s}
+.card:hover img{filter:grayscale(0%)}
+.card-body{padding:22px}
+.highlight{border:1px solid #D4AF37;background:linear-gradient(135deg,rgba(212,175,55,0.1),rgba(212,175,55,0.02));padding:28px;border-radius:20px;text-align:center}
+.btn{padding:14px 24px;border-radius:100px;font-weight:800;letter-spacing:1px;text-decoration:none;display:inline-block;cursor:pointer;border:none;margin:6px;font-size:12px}
+.btn-gold2{background:#D4AF37;color:#000}.btn-outline{border:1px solid #D4AF37;color:#D4AF37;background:transparent}
+.badge{border:1px solid rgba(212,175,55,0.3);color:#D4AF37;padding:6px 14px;border-radius:100px;font-size:10px;letter-spacing:2px;display:inline-block;margin-bottom:12px}
+.fomo{background:linear-gradient(135deg,#D4AF37 0%,#8B6914 100%);color:#000;padding:40px;text-align:center;border-radius:20px;margin:20px 0}
+.status{display:flex;gap:14px;overflow-x:auto;padding:14px;background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(212,175,55,0.1)}
+.s-item{text-align:center;min-width:74px}
+.s-circle{width:64px;height:64px;border-radius:50%;border:2px solid #D4AF37;padding:2px;overflow:hidden;margin:0 auto}
+.s-circle img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+input,select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.2);color:#fff;padding:14px;border-radius:12px;margin:8px 0;font-family:'Inter'}
+@media(max-width:900px){.nav-links{display:none}.hamburger{display:block}.hero{height:85vh}}
+</style>
+</head>
+<body>
+
+<div class="nav">
+<div class="logo">BALAJI HILL SIDE</div>
+<div class="nav-links">
+<a onclick="document.getElementById('estates').scrollIntoView()">THE ESTATES</a>
+<a onclick="document.getElementById('project').scrollIntoView()">THE PROJECT</a>
+<a onclick="document.getElementById('location').scrollIntoView()">LOCATION</a>
+<a onclick="document.getElementById('amenities').scrollIntoView()">AMENITIES</a>
+<a onclick="document.getElementById('contact').scrollIntoView()">CONTACT</a>
+</div>
+<div style="display:flex;align-items:center;gap:10px">
+<a href="tel:9703401402" class="btn-gold">24/7 ENQUIRE</a>
+<div class="hamburger" onclick="openMenu()">☰</div>
+</div>
+</div>
+
+<div id="mob" class="mob-menu">
+<div style="display:flex;justify-content:space-between"><div class="logo">BALAJI HILL SIDE</div><div onclick="closeMenu()" style="font-size:28px;color:#D4AF37;cursor:pointer">✕</div></div>
+<a onclick="closeMenu();document.getElementById('estates').scrollIntoView()">THE ESTATES</a>
+<a onclick="closeMenu();document.getElementById('project').scrollIntoView()">THE PROJECT</a>
+<a onclick="closeMenu();document.getElementById('location').scrollIntoView()">LOCATION - 1KM KING</a>
+<a onclick="closeMenu();document.getElementById('amenities').scrollIntoView()">AMENITIES - RESORT LEVEL</a>
+<a onclick="closeMenu();document.getElementById('contact').scrollIntoView()">CONTACT - 24/7</a>
+<a href="tel:9703401402" class="btn-gold" style="margin-top:20px;text-align:center">CALL 9703401402 - 24/7</a>
+</div>
+
+<div class="status">
+<div class="s-item"><div class="s-circle" style="display:flex;align-items:center;justify-content:center;background:#111">+</div><div style="font-size:9px;margin-top:6px">MY ESTATE</div></div>
+<div class="s-item"><div class="s-circle"><img src="https://via.placeholder.com/100/000000/D4AF37?text=TRINEX"></div><div style="font-size:9px;margin-top:6px">TRINEX INFRA</div></div>
+<div class="s-item"><div class="s-circle"><img src="https://via.placeholder.com/100/0A1931/D4AF37?text=TATVA"></div><div style="font-size:9px;margin-top:6px">TATVA REALTY</div></div>
+<div class="s-item"><div class="s-circle"><img src="https://i.pravatar.cc/100?img=11"></div><div style="font-size:9px;margin-top:6px">DR REDDY US</div></div>
+<div class="s-item"><div class="s-circle"><img src="https://i.pravatar.cc/100?img=32"></div><div style="font-size:9px;margin-top:6px">INFOSYS VP</div></div>
+</div>
+
+<div class="hero">
+<div class="hero-content">
+<div class="badge">⚜️ SOVEREIGN HILL PROJECT • 100CR • 45 ACRES • RERA • GHMC • HMDA</div>
+<h1 class="cinzel">BALAJI HILL SIDE<br><span style="color:#D4AF37">PRIVATE ESTATES</span></h1>
+<p>100Cr SOVEREIGN HILL PROJECT • PEDDA AMBERPET • VIJAYAW
